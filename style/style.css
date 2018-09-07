@@ -1,1 +1,121 @@
+body{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
 
+
+nav{
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    background: #000 url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg);
+    padding:10px;
+    z-index: 1;
+
+}
+
+.Logo {
+    position:absolute;
+    height: 100%;
+}
+
+.Logo img {
+    height: 85%;
+}
+
+.searchButton {
+    background: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg) center center no-repeat;
+}
+
+.Share a{
+    background-image: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/share.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 22px;
+    float: left;
+}
+
+form {
+    float: left;
+}
+
+.TopNav1, .TopNav2 {
+
+}
+
+.TopNav1 {
+
+    width: fit-content; 
+    margin:auto;
+    padding: 12 px;
+
+
+}
+
+.Search{
+    display: flex;
+    width:fit-content;
+    flex-direction: row;
+    margin:20px;
+    float: right;
+}
+
+.TopNav2{
+    background-color: #333333;
+   
+
+    position: absolute;
+    left:50%;
+    bottom:5px;
+    transform:translate(-50%,-50%);
+    margin:0 auto;
+
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+
+.articles {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    display: flex;
+    height: 1000px;
+    width: 1020px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: DodgerBlue;
+    align-self: center;
+  }
+  
+  .articles > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    height: 300px; 
+    margin: 10px;
+    padding: 10px;
+  }
