@@ -1,6 +1,11 @@
 body{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+<<<<<<< HEAD
     background: rgb(17, 17, 17);
+=======
+    background: #000000;
+    margin: 0px;
+>>>>>>> 489688e10e85406cd64301ceeed14b415474bacb
 }
 
 
@@ -11,10 +16,22 @@ nav{
     height: 135px;
     width: 100%;
     background: #000 url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg);
+<<<<<<< HEAD
     margin: auto;
     padding: 10px;
+=======
+>>>>>>> 489688e10e85406cd64301ceeed14b415474bacb
     z-index: 1;
+}
 
+#navDiv {
+    height: 120px;
+    width: 100%;
+}
+
+main {
+    height: 1200px;
+    width: 100%;
 }
 
 .Logo {
