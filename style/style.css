@@ -1,14 +1,18 @@
 body{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background: rgb(17, 17, 17);
 }
 
 
 nav{
     position: fixed;
-    height: 120px;
+    top: 0px;
+    left: 0px;
+    height: 135px;
     width: 100%;
     background: #000 url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg);
-    padding:10px;
+    margin: auto;
+    padding: 10px;
     z-index: 1;
 
 }
@@ -43,18 +47,18 @@ form {
     float: left;
 }
 
-.TopNav1, .TopNav2 {
-
-}
 
 .TopNav1 {
 
     width: fit-content; 
-    margin:auto;
-    padding: 12 px;
+    margin: auto;
+    padding: 12px;
 
 
 }
+
+ .TopNav1 li+li { border-left: 1px solid #ffffff }
+
 
 .Search{
     display: flex;
@@ -70,9 +74,11 @@ form {
 
     position: absolute;
     left:50%;
-    bottom:5px;
+    bottom:0px;
     transform:translate(-50%,-50%);
-    margin:0 auto;
+    margin-top:1px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 
     /* display: flex;
     justify-content: center; */
@@ -99,16 +105,18 @@ li a {
 }
 
 
+
+
 .articles {
     position: absolute;
-    top: 200px;
+    top: 165px;
     left: 250px;
     display: flex;
-    height: 1000px;
+    height: auto;
     width: 1020px;
     flex-wrap: wrap;
     align-content: space-between;
-    background-color: DodgerBlue;
+    background-color: black;
     align-self: center;
   }
   
@@ -118,4 +126,5 @@ li a {
     height: 300px; 
     margin: 10px;
     padding: 10px;
+    font-size: 14px;
   }
