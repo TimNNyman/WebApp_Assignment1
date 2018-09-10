@@ -2,6 +2,7 @@ body{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background: #000000;
     margin: 0px;
+    
 }
 
 
@@ -23,11 +24,29 @@ nav{
 }
 
 main {
-    height: 1200px;
+    height: fit-content;
     width: 1000px;
     margin:auto;
     margin-top: 30px;
 }
+
+.scrollingImgDiv{
+    height: 200px;
+    width:100%;
+
+}
+
+#scrollingImg {
+    height: 100%;
+    width: 100%;
+}
+
+#scrollingImg.center{
+    display:block;
+    margin: 0 auto;
+}
+
+
 
 .Logo {
     position:absolute;
@@ -70,6 +89,14 @@ form {
 }
 
  .TopNav1 li+li { border-left: 1px solid #ffffff }
+
+ .TopNav1 li:hover, #footer-links li:hover {
+    text-decoration: underline;
+ }
+
+ .TopNav2 li:hover {
+    background-color: #555555;
+ }
 
 
 
@@ -142,4 +169,11 @@ li a {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
+  }
+
+  video{
+      height: inherit;
+      width: auto;
+      display:block;
+      margin:0 auto 0 auto;
   }

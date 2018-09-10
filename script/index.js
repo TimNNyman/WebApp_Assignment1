@@ -16,6 +16,6 @@ function startTimer() {
 }
 
 var images = [], x = 0;
-images[0] = "images/scrollImg1.jpg";
-images[1] = "images/scrollImg2.jpg";
-images[2] = "images/scrollImg3.jpg";
+images[0] = "images/raptor2.jpg";
+images[1] = "images/raptor3.jpg";
+images[2] = "images/raptor5.jpg";

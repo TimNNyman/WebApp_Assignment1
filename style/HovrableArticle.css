@@ -7,6 +7,7 @@
     display: block;
     width: 100%;
     height: auto;
+    margin:auto;
   }
   
   .overlay {
@@ -30,6 +31,7 @@
     width: fit-content;
   }
   
+
   .text {
     background-color: rgba(0, 139, 186, 0.459);
     white-space: wrap; 
