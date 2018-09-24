@@ -1,16 +1,17 @@
 .container {
     position: relative;
     width: 50%;
+    overflow: hidden;
   }
   
-  .image {
+  .container > .image {
     display: block;
     width: 100%;
     height: auto;
     margin:auto;
   }
   
-  .overlay {
+  .container > .overlay {
     position: absolute;
     bottom: 0;
     left: 0;

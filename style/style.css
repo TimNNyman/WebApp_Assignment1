@@ -1,12 +1,10 @@
-body{
+body {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background: #000000;
     margin: 0px;
-    
 }
 
-
-nav{
+nav {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -25,16 +23,14 @@ nav{
 
 main {
     height: fit-content;
-    width: 1000px;
-    margin:auto;
+    margin: auto;
     margin-top: 30px;
     overflow: auto;
 }
 
-.scrollingImgDiv{
+.scrollingImgDiv {
     height: 200px;
-    width:100%;
-
+    width: 100%;
 }
 
 #scrollingImg {
@@ -42,15 +38,13 @@ main {
     width: 100%;
 }
 
-#scrollingImg.center{
-    display:block;
+#scrollingImg.center {
+    display: block;
     margin: 0 auto;
 }
 
-
-
 .Logo {
-    position:absolute;
+    position: absolute;
     height: 100%;
 }
 
@@ -62,7 +56,7 @@ main {
     background: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/search.svg) center center no-repeat;
 }
 
-.Share a{
+.Share a {
     background-image: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/share.svg);
     background-size: 30px;
     background-repeat: no-repeat;
@@ -79,63 +73,53 @@ form {
     float: left;
 }
 
-
 .TopNav1 {
-
-    width: fit-content; 
+    width: fit-content;
     margin: auto;
     padding: 12px;
-
-
 }
 
- .TopNav1 li+li { border-left: 1px solid #ffffff }
+.TopNav1 li+li {
+    border-left: 1px solid #ffffff
+}
 
- .TopNav1 li:hover, #footer-links li:hover {
+.TopNav1 li:hover, #footer-links li:hover {
     text-decoration: underline;
- }
+}
 
- .TopNav2 li:hover {
+.TopNav2 li:hover {
     background-color: #555555;
- }
+}
 
-
-
-.Search{
+.Search {
     display: flex;
-    width:fit-content;
+    width: fit-content;
     flex-direction: row;
-    margin:20px;
+    margin: 20px;
     float: right;
 }
 
-.TopNav2{
+.TopNav2 {
     background-color: #333333;
-   
-
     position: absolute;
-    left:50%;
-    bottom:0px;
-    transform:translate(-50%,-50%);
-    margin-top:1px;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin-top: 1px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-
     /* display: flex;
     justify-content: center; */
-
 }
 
-
-
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li{
+li {
     float: left;
 }
 
@@ -147,34 +131,56 @@ li a {
     display: block;
 }
 
-
-
-
 .articles {
-
-    
+    width: 1000px;
     display: flex;
     height: auto;
-    flex-wrap: wrap;
-    align-content: space-between;
-    background-color: black;
-    align-self: center;
-  }
-  
-  .articles > div {
-    background-color: #f1f1f1;
-    width: 300px;
-    height: 300px; 
     margin: auto;
-    margin-top:10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 14px;
-  }
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    grid-gap: 30px;
+}
 
-  video{
-      height: inherit;
-      width: auto;
-      display:block;
-      margin:0 auto 0 auto;
-  }
+.scrollingImgDiv {
+    grid-column: span 3;
+}
+
+.updatableNews {
+    grid-column: span 2;
+}
+
+.articles>div {
+    background-color: #f1f1f1;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+}
+
+video {
+    height: inherit;
+    width: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.updatableNews>img {
+    height: 100%;
+    width: 300px;
+    float: left;
+}
+
+.updatableNews>.TextContent {
+    padding: 20px;
+    padding-left: 310px;
+}
+
+.updatableNews .Title {
+    font-size: 24px;
+}
+
+.updatableNews .Text {
+    font-size: 16px;
+}
